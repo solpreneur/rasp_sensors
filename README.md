@@ -5,6 +5,7 @@ This is a simple django web application that is connected to an AWS database (Po
 
 
 #Run on Docker
+
 Simply create a docker container and run (Terminal) it using the following lines of code. 
 
 1 - Create Docker contianer 
