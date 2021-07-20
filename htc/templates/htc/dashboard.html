@@ -1,0 +1,99 @@
+{% extends 'htc/base.html' %}
+{% load static %}
+{% block page_title_des %}
+
+    <title>Dashboard</title>
+    <meta name="description" content="dasboard">
+
+{% endblock  %}
+
+<!-- body -->
+{% block body %}
+<!--start page wrapper -->
+<div class="page-wrapper">
+    <div class="page-content">
+
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-6">
+               <div class="row">
+              <div class="col-12 col-lg-6 col-xl-6">
+                <div class="card radius-10">
+                <div class="card-body text-center px-0">
+                  <h6 class="text-uppercase">Temperature <sup>o</sup>C</h6>
+                  
+                  <div class="chart-container-10 d-flex align-items-center justify-content-center">
+                    <div id="total-visitors"></div>
+                  </div>
+
+                </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <div class="row align-items-center text-center">
+                    <div class="col border-end">
+                    <h6 class="mb-0">Last Update</h6>
+                    <small class="extra-small-font" id="temp_datetime"></small>
+                    </div>
+                    <!-- <div class="col">
+                    <h5 class="mb-0">985</h5>
+                    <small class="extra-small-font">Last Month</small>
+                    </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <div class="col-12 col-lg-6 col-xl-6">
+               <div class="card radius-10 overflow-hidden">
+               <div class="card-body">
+                 <p>Humidity</p>
+                 <h3 id="humidity"></h3>
+                 <p class="mb-0" id="h-datetime"></p>
+               </div>
+                <div class="progress-wrapper">
+                <div class="progress" style="height: 7px;">
+                  <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                </div>
+                 </div>
+               </div>
+               <div class="card radius-10">
+               <div class="card-body">
+                 <p>CO<sub>2</sub> Level</p>
+                 <h3 id="co2"></h3>
+                 <p class="mb-0" id="co2-datetime"></p>
+               </div>
+               <div id="co2-levels-graph"></div>
+               </div>
+             </div>  
+             
+               </div><!--end row-->
+            </div>
+    
+    
+            <div class="col-12 col-lg-6 col-xl-6">
+              <div class="row">
+                
+                <div class="col-12 col-lg-12 col-xl-12">
+                  <div class="card radius-10">
+                     <div class="card-body">
+                       <p class="visually-hidden">Temperature Day</p>
+                       <div id="temp-hum"></div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-12 col-lg-12 col-xl-12">
+                  <div class="card radius-10">
+                     <div class="card-body">
+                       <p class="visually-hidden">hum Day</p>
+                       <div id="hum-day"></div>
+                     </div>
+                   </div>
+                </div>
+              </div><!--end row-->
+            </div>
+
+            
+    
+          </div><!--end row-->
+    
+    </div>
+</div>
+<!--end page wrapper -->
+{% endblock %}
