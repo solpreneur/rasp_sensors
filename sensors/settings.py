@@ -10,8 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 9ebf57e0a6e1ef27a0a39a1fce9eac5a5e841b96
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
