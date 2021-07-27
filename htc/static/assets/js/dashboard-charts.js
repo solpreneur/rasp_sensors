@@ -511,7 +511,7 @@ $(function() {
   loadCharts();
   setInterval(function() {
     loadCharts();
-  }, 60000);
+  }, 300000);
         
 
 
