@@ -125,7 +125,7 @@ def read_day(request,reading_type=None):
         if len(typ_details) > 0 :
             
             #get  reading QuerySet for today
-            reading= Reading.objects.filter(read_type_id=typ_details.values()[0]['id'],date_time__date="2021-06-17").order_by('date_time')
+            reading= Reading.objects.filter(read_type_id=typ_details.values()[0]['id']).order_by('date_time')
            
             #if query set != empty
             if len(reading) > 0 :
